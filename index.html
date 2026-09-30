@@ -15,7 +15,7 @@
 <meta property="og:description" content="Créations uniques assemblées à la main en France, garanties casse à vie. Tous les dimanches matin au marché de Bussy à Sartrouville.">
 <link rel="canonical" href="https://arnow-studio.github.io/art-distinction/">
 <meta property="og:url" content="https://arnow-studio.github.io/art-distinction/">
-<meta property="og:image" content="https://arnow-studio.github.io/art-distinction/uploads/20250505_004733.jpg">
+<meta property="og:image" content="https://arnow-studio.github.io/art-distinction/uploads/20250505_004733-a4d15124.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"JewelryStore","name":"Art Distinction Paris","description":"Bracelets en pierres véritables imaginés et assemblés à la main en France, garantis casse à vie.","image":"https://arnow-studio.github.io/art-distinction/uploads/logo.png","url":"https://arnow-studio.github.io/art-distinction/","founder":{"@type":"Person","name":"Nikos K."},"address":{"@type":"PostalAddress","streetAddress":"Marché de Bussy","addressLocality":"Sartrouville","postalCode":"78500","addressCountry":"FR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"https://schema.org/Sunday","opens":"08:30","closes":"13:00"}],"sameAs":["https://www.facebook.com/artdistinction/","https://www.instagram.com/artdistinctionbracelets/"]}
@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,400&family=Archivo:wght@400;500;600&display=swap">
 <style>
-html{scroll-behavior:smooth}
+html,body{height:100%;overflow:hidden}
 body{margin:0;background:#FFFFFF;color:#2B2621;font-family:'Archivo',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:#EABF5A;text-decoration:none}
 a:hover{color:#A85F22}
@@ -40,64 +40,55 @@ a:hover{color:#A85F22}
 <template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#EABF5A"></rect><text x="50" y="62" font-family="Georgia,serif" font-size="34" text-anchor="middle" fill="#2B2621">AD</text></svg></template>
 </helmet>
 
-<div style="min-height:100vh;display:flex;flex-direction:column;background:#FFFFFF">
+<div style="height:100dvh;overflow:hidden;display:flex;flex-direction:column;background:#FFFFFF">
 
-<header style="position:sticky;top:0;z-index:10;background:#FFFFFF">
-  <div style="max-width:1240px;margin:0 auto;padding:20px clamp(16px,4vw,40px) 36px;display:flex;flex-direction:column;align-items:center;gap:28px">
-    <a href="#top" style="display:block;height:clamp(64px,9vw,88px)">
+<header style="flex:none;background:#FFFFFF">
+  <div style="max-width:1240px;margin:0 auto;padding:16px clamp(16px,4vw,40px) 12px;display:flex;flex-direction:column;align-items:center;gap:20px">
+    <a href="#top" style="display:block;height:clamp(64px,12vh,120px)">
       <img src="uploads/logo.png" alt="Art Distinction Paris" style="height:100%;width:auto;display:block">
     </a>
-    <div style="font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#EABF5A;text-align:center;margin-top:-8px">Bracelets en pierres véritables · Faits main en France</div>
+    
   </div>
 </header>
 
-<main id="top" style="flex:1">
+<main id="top" style="flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center">
 
 <section id="creations" data-screen-label="Hero" style="">
   <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))">
-    <div style="padding:clamp(32px,6vw,72px) clamp(16px,4vw,40px);display:flex;flex-direction:column;justify-content:space-between;gap:40px">
+    <div style="padding:clamp(12px,3vh,40px) clamp(16px,4vw,40px);display:flex;flex-direction:column;justify-content:center;gap:40px">
       <div style="display:flex;flex-direction:column;gap:24px">
+        <h2 style="margin:0;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#EABF5A">Bracelets en pierres véritables<br>Faits main en France</h2>
         
-        <h1 style="margin:0;font-family:'Inria Serif',Georgia,serif;font-weight:500;font-size:clamp(40px,6vw,76px);line-height:1.02;letter-spacing:-.01em;text-wrap:balance;color:#2B2621">L'accord parfait entre qualité, authenticité <em style="color:#EABF5A">et originalité.</em></h1>
+        <h1 style="margin:0;font-family:'Inria Serif',Georgia,serif;font-weight:500;font-size:clamp(26px,min(5.5vw,7vh),76px);line-height:1.02;letter-spacing:-.01em;text-wrap:balance;color:#2B2621">L'accord parfait entre qualité, authenticité <em style="color:#EABF5A">et originalité.</em></h1>
       </div>
       
     </div>
 
     <div style="display:flex;flex-direction:column;background:#FFFFFF" onMouseEnter="{{ pause }}" onMouseLeave="{{ resume }}">
-      <div style="position:relative;aspect-ratio:4/3;overflow:hidden;background:#FFFFFF">
+      <div style="position:relative;aspect-ratio:4/3;width:100%;max-height:calc(100dvh - 410px);min-height:160px;overflow:hidden;background:#FFFFFF">
         {{ slideEls }}
       </div>
-      <div style="display:flex;align-items:stretch;background:#FFFFFF">
+      <div style="display:flex;justify-content:center;align-items:stretch;gap:8px;background:#FFFFFF">
         <button onClick="{{ prev }}" aria-label="Image précédente" style="width:56px;height:52px;display:flex;align-items:center;justify-content:center;background:transparent;border:0;cursor:pointer;color:#2B2621" style-hover="background:#E9E0CF">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg>
         </button>
         <button onClick="{{ next }}" aria-label="Image suivante" style="width:56px;height:52px;display:flex;align-items:center;justify-content:center;background:transparent;border:0;cursor:pointer;color:#2B2621" style-hover="background:#E9E0CF">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
         </button>
-        <div style="flex:1;display:flex;align-items:center;gap:14px;padding:0 16px;min-width:0">
-          <div style="flex:1;height:2px;background:#D9CDB8;position:relative;overflow:hidden">
-            <div style="position:absolute;left:0;top:0;bottom:0;width:{{ progress }}%;background:#56644C;transition:width .6s ease"></div>
-          </div>
-          
-        </div>
+        
       </div>
     </div>
   </div>
 </section>
 
 <section id="contact" data-screen-label="Contact" style="background:#FFFFFF">
-  <div style="max-width:1240px;margin:0 auto;padding:clamp(40px,6vw,72px) clamp(16px,4vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:32px;align-items:end">
-    <div style="display:flex;flex-direction:column;gap:12px">
-      <h2 style="margin:0;font-family:'Inria Serif',Georgia,serif;font-weight:600;font-size:clamp(30px,3.6vw,44px);line-height:1.1">Suivez mes nouvelles créations</h2>
-      <p style="margin:0;font-size:17px;line-height:1.6;max-width:44ch;color:#4A433B">Nouveautés, pièces uniques et rendez-vous du dimanche, en avant-première.</p>
-      <div style="display:flex;align-items:flex-start;gap:10px;font-size:16px;line-height:1.5;color:#2B2621"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EABF5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span>Marché de Bussy<br>78500 Sartrouville — le dimanche matin</span></div>
-    </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px">
-      <a href="{{ facebookUrl }}" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:14px;min-height:64px;padding:0 20px;border-radius:10px;background:#F9F5EE;color:#2B2621;font-weight:600;font-size:16px" style-hover="background:#56644C;color:#FBF8F2">
+  <div style="max-width:1240px;margin:0 auto;padding:clamp(24px,5vh,56px) clamp(16px,4vw,40px) clamp(8px,2vh,24px);display:flex;justify-content:center">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;width:100%;max-width:560px">
+      <a href="{{ facebookUrl }}" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:14px;min-height:52px;padding:0 20px;border-radius:10px;background:#F9F5EE;color:#2B2621;font-weight:600;font-size:16px" style-hover="background:#56644C;color:#FBF8F2">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
         Facebook
       </a>
-      <a href="{{ instagramUrl }}" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:14px;min-height:64px;padding:0 20px;border-radius:10px;background:#F9F5EE;color:#2B2621;font-weight:600;font-size:16px" style-hover="background:#D8873A;color:#FBF8F2">
+      <a href="{{ instagramUrl }}" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:14px;min-height:52px;padding:0 20px;border-radius:10px;background:#F9F5EE;color:#2B2621;font-weight:600;font-size:16px" style-hover="background:#D8873A;color:#FBF8F2">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
         Instagram
       </a>
@@ -107,18 +98,14 @@ a:hover{color:#A85F22}
 
 </main>
 
-<footer style="background:#FFFFFF;color:#4A433B">
-  <div style="max-width:1240px;margin:0 auto;padding:28px clamp(16px,4vw,40px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;font-size:14px">
-    <img src="uploads/logo.png" alt="Art Distinction Paris" style="height:64px;width:auto;display:block">
-    <span>Bijoux faits main en France · Marché de Bussy, Sartrouville</span>
-    <span style="color:#6F665A">© 2026 Art Distinction</span>
-  </div>
+<footer style="flex:none;background:#FFFFFF;color:#6F665A">
+  <div style="max-width:1240px;margin:0 auto;padding:10px clamp(16px,4vw,40px);display:flex;justify-content:center;font-size:14px">©2026 Art Distinction</div>
 </footer>
 
 </div>
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;intervalSec&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:4,&quot;min&quot;:2,&quot;max&quot;:10,&quot;step&quot;:0.5,&quot;unit&quot;:&quot;s&quot;,&quot;section&quot;:&quot;Diaporama&quot;,&quot;tsType&quot;:&quot;number&quot;},&quot;order&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Aléatoire&quot;,&quot;Chronologique&quot;],&quot;default&quot;:&quot;Aléatoire&quot;,&quot;section&quot;:&quot;Diaporama&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;fit&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Contenir&quot;,&quot;Remplir&quot;],&quot;default&quot;:&quot;Contenir&quot;,&quot;section&quot;:&quot;Diaporama&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;facebookUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://www.facebook.com/artdistinction/&quot;,&quot;section&quot;:&quot;Réseaux&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;instagramUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://www.instagram.com/artdistinctionbracelets/&quot;,&quot;section&quot;:&quot;Réseaux&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
-const FILES = ["20220921_214713.png","20220921_214734.png","20220921_214748.png","20220921_214801.png","20220921_214827.png","20220921_214839.png","20220921_214851.png","20220921_214901.png","20220921_214920.png","20220921_214931.png","20250505_004733.jpg","20250505_004751.jpg","20250505_004814.jpg","20250505_004840.jpg","20250505_004859.jpg","20250505_004935.jpg","20250505_004955.jpg","20250505_005020.jpg","20250505_005046.jpg","20250505_005105.jpg","20250505_005118.jpg","20250505_005132.jpg","20250505_005144.jpg","20250505_005156.jpg","20250505_005209.jpg","20250505_005222.jpg","20250505_005235.jpg","20250505_005254.jpg","20250505_005309.jpg","20250505_005323.jpg","20250505_005337.jpg","20250505_005350.jpg","20250505_005401.jpg","20250505_005414.jpg","20250505_005428.jpg","20250505_005441.jpg"];
+const FILES = ["20250505_004733-a4d15124.jpg","20250505_004751-a9a7ff5d.jpg","20250505_004814-62379aa7.jpg","20250505_004840-3eeb282e.jpg","20250505_004859-724d4801.jpg","20250505_004935-aaffc2be.jpg","20250505_004955-0ee4804b.jpg","20250505_005020-ef0f706e.jpg","20250505_005046-c9f24e7a.jpg","20250505_005105-02cc6b5f.jpg","20250505_005118-d55c6b48.jpg","20250505_005132-48db9696.jpg","20250505_005144-894c22ac.jpg","20250505_005156-1683d532.jpg","20250505_005209-e589ece4.jpg","20250505_005222-c7c8f735.jpg","20250505_005235-7e98b1cc.jpg","20250505_005254-bd96b41f.jpg","20250505_005309-23d753e1.jpg"];
 
 function shuffle(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 
